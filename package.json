@@ -1,0 +1,26 @@
+{
+  "name": "dwpc1-2023a",
+  "version": "1.0.0",
+  "description": "Proyecto de aprendizaje de express.js ",
+  "type": "module",
+  "engines": {
+    "node": "19.x",
+    "npm": "9.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "#"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "itgam",
+    "js"
+  ],
+  "author": "@gerado",
+  "license": "MIT"
+}
