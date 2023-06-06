@@ -19,6 +19,7 @@ export const postAddProduct = (req, res) => {
     const { title } = req.body;
     // agregamos el dato en la base de datos
     products.push(title);
+    console.log(title);
     //redireccionando
     return res.redirect('/');
 }
@@ -34,4 +35,5 @@ export const getProducts = (req, res) => {
         isProductsListEmpty: products.length === 0,
         products
     });
+    console.log(products);
 }

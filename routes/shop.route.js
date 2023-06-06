@@ -2,8 +2,9 @@
 import { Router } from 'express';
 //Importando Action funcion del controlador products
 import { getProducts } from '../controllers/products.controllers.js';
+import { httpError } from '../controllers/htttpError.controller.js';
 
-import httpStatus from 'http-status';
+//import httpStatus from 'http-status';
 
 // Creando una instancia del enrutador de express
 const router = Router();
@@ -21,8 +22,6 @@ router.get('/about', (req, res) => {
   `);
 });
 
-router.use((req, res, next) => {
-  res.status(httpStatus.NOT_FOUND).render('404', { layout: false });
-});
+router.use(httpError);
 
 export default router;
