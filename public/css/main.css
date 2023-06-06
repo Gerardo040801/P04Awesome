@@ -34,8 +34,8 @@ main {
 }
 
 .main-header__item a {
-    margin: 0 1rem;
-    padding: 0;
+    text-decoration: none;
+    color: white;
 }
 
 .main-header__item a:hover,
